@@ -15,5 +15,5 @@
     "frontend/vite.config.ts",
     "frontend/**/*.ts",
     "frontend/**/*.tsx"
-  ]
+, "src/lib/config.server.ts", "src/lib/error-capture.ts", "frontend/src/hooks", "src/lib/error-page.ts", "src/lib/error-reporting.ts", "src/lib/sudoku-ai.functions.ts", "src/lib/sudoku.ts", "src/lib/tesseract-ocr.ts", "src/lib/utils.ts"  ]
 }

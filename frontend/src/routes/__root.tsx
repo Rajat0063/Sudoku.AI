@@ -10,7 +10,7 @@ import {
 import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
-import { reportError } from "../lib/error-reporting";
+import { reportError } from "../../../src/lib/error-reporting";
 
 function NotFoundComponent() {
   return (

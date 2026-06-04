@@ -4,7 +4,7 @@ import {
   createCsrfMiddleware,
 } from "@tanstack/react-start";
 
-import { renderErrorPage } from "./lib/error-page";
+import { renderErrorPage } from "../../src/lib/error-page";
 import { attachSupabaseAuth } from "@/integration/supabase/auth-attacher";
 
 const errorMiddleware = createMiddleware().server(async ({ next }) => {

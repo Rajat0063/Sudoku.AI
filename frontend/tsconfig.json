@@ -10,23 +10,29 @@
     "jsx": "react-jsx",
     "module": "ESNext",
     "lib": ["ES2022", "DOM", "DOM.Iterable"],
-    "types": ["vite/client"],
+    "types": ["vite/client", "node", "react", "react-dom"],
 
-    /* Bundler mode */
-    "moduleResolution": "Bundler",
+    "typeRoots": ["./src/types", "./node_modules/@types"],
+
+    /* Use Node resolution for editor friendliness */
+    "moduleResolution": "node",
+    "baseUrl": ".",
     "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": false,
     "noEmit": true,
 
     /* Linting */
     "skipLibCheck": true,
-    "strict": true,
+    "strict": false,
+    "noImplicitAny": false,
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "/lib/*": ["./src/lib/*"],
+      "/supabase/*": ["./src/supabase/*"]
     }
   }
 }

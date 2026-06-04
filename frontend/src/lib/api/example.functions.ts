@@ -1,7 +1,7 @@
 import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
 
-import { getServerConfig } from "../config.server";
+import { getServerConfig } from "../../../../src/lib/config.server";
 
 // Example createServerFn. Server-side handler invoked from the client:
 //   const result = await getGreeting({ data: { name: "Ada" } })
